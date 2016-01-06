@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+                                   "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+	<definition name="nexBaseLayout" path="/jsp/layouts/nex/nexBaseLayout.jsp">
+		<put name="product" value="nex" />
+		<put name="title" value="Tiles Theme - POC :: Nex" />
+		<put name="header" value="/jsp/header/header.jsp" />
+		<put name="menu" value="/jsp/content/menu.jsp" />
+		<put name="body" />
+		<put name="footer" value="/jsp/footer/footer.jsp" />
+	</definition>
+	<definition extends="nexBaseLayout" name="home">
+		<put name="body" value="/jsp/content/home.jsp" />
+	</definition>
+</tiles-definitions>
